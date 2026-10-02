@@ -1,0 +1,13 @@
+{
+  "name": "yana-nettutor-openai-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted server-side OpenAI proxy for Yana n Tuasoc NetTutor",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

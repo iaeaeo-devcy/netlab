@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: yana-nettutor-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: NETTUTOR_PROXY_TOKEN
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5-mini
+      - key: APP_ORIGINS
+        value: "*"
